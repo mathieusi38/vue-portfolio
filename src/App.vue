@@ -7,10 +7,10 @@
     <v-container fluid top>
       <v-row class="spacing-playground">
         <!-- Presentation -->
-        <v-col cols="6">
+        <v-col cols="12" sm="6">
           <v-img src="mathieu.png" contain max-height="500"></v-img>
         </v-col>
-        <v-col cols="6">
+        <v-col cols="12" sm="6" class="text-md-center text-sm-none ">
           <h5 class="red--text text--darken-4 top title">Mathieu Siaud</h5>
           <h1 class="white--text">Developpeur web</h1>
           <p class="grey--text">
@@ -60,7 +60,7 @@
                 </div>
               </v-col>
               <!-- Exp -->
-              <v-col cols="12" class="mt-10">
+              <v-col cols="12" class="mt-5">
                 <div class="child1">
                   <h1 class="red--text text--darken-4 mt-4 number">+2 ans</h1>
                   <h3 class="white--text mt-4">d'expérience professionnelle</h3>
