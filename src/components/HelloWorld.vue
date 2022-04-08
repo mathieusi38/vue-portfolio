@@ -1,58 +1,125 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <v-app
+    id="home"
+    :style="{ background: $vuetify.theme.themes.dark.background }"
+  >
+    <nav-bar />
+    <v-container fluid>
+      <v-row>
+        <v-col cols="6">
+          <v-img src="1.png" contain max-height="500"></v-img>
+        </v-col>
+        <v-col cols="6">
+          <h5 class="red--text text--darken-4 top">Hello Im Agetha</h5>
+          <h1 class="white--text">Visual Designer</h1>
+          <p class="grey--text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Adipisci explicabo, cupiditate necessitatibus iure hic omnis est ab
+            <br />
+            At nihil et temporibus ratione!
+          </p>
+          <v-btn tile color="#A7121D" dark> about me </v-btn>
+        </v-col>
+      </v-row>
+    </v-container>
+    <Footer />
+  </v-app>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
-</script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+export default {
+  name: "HelloWorld",
+  data: () => ({
+    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
+  }),
+  components: {
+  },
+};
+</script>
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.top {
+  margin-top: 180px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.topInverse {
+  margin-top: -250px;
 }
-li {
+.topTolbar {
+  margin-top: 100px;
+  text-align: center;
+}
+.first {
+  width: 100%;
+  height: 610px;
+  background: linear-gradient(
+    to right,
+    #181818,
+    #181818 50%,
+    #111111 50%,
+    #111111 50%
+  );
+  text-align: center;
+  padding: 2rem 2rem;
+}
+.second {
+  width: 100%;
+  height: 400px;
+  background: #181818;
+  text-align: center;
+  padding: 2rem 2rem;
+}
+.secondchild1 {
   display: inline-block;
-  margin: 0 10px;
+  background-color: #1e1e1e;
+  padding: 2rem 1rem;
+  vertical-align: middle;
+  text-align: left;
+  margin-top: 250px;
 }
-a {
-  color: #42b983;
+.child {
+  display: inline-block;
+  padding: 2rem 1rem;
+  vertical-align: middle;
+  text-align: left;
+  margin-right: 8px;
+}
+.bgColor1 {
+  background-color: #1e1e1e;
+}
+.bgColor2 {
+  background-color: #ce1d2a;
+}
+
+.child1 {
+  display: inline-block;
+  padding: 2rem 1rem;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 240px;
+}
+.child2 {
+  display: inline-block;
+  width: 245px;
+  vertical-align: middle;
+}
+.mRight {
+  margin-right: 8px;
+}
+.mButton {
+  margin-bottom: 8px;
+}
+.padding {
+  padding: 8px 0;
+}
+
+.col-12.padd {
+  padding: 12px 0 !important;
+}
+.col-12.childcol {
+  padding: 0 !important;
+}
+h1.number {
+  font-size: 50px;
+  font-weight: bold;
 }
 </style>
