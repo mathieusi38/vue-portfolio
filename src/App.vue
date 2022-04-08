@@ -7,10 +7,10 @@
     <v-container fluid top>
       <v-row class="spacing-playground">
         <!-- Presentation -->
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="6" >
           <v-img src="mathieu.png" contain max-height="500"></v-img>
         </v-col>
-        <v-col cols="12" sm="6" class="text-md-center text-sm-none ">
+        <v-col cols="12" sm="6" class="text-center text-sm-left ">
           <h5 class="red--text text--darken-4 top title">Mathieu Siaud</h5>
           <h1 class="white--text">Developpeur web</h1>
           <p class="grey--text">
@@ -25,7 +25,7 @@
           <div class="first" id="project">
             <v-row>
               <v-col cols="12">
-                <div class="child bgColor1">
+                <div class="child bgColor1 mb-6 mb-sm-0">
                   <h3 class="ml-3 mt-4 red--text">Bac +5</h3>
                   <h3 class="white--text ml-3 mt-4">Mastère Ingénierie du Web</h3>
                   <p class="grey--text ml-3 mt-6">
@@ -36,7 +36,7 @@
                     Challenge de projet WEB <br />
                   </p>
                 </div>
-                <div class="child bgColor1">
+                <div class="child bgColor1 mb-6 mb-sm-0">
                   <h3 class="ml-3 mt-4 red--text">Bac +3</h3>
                   <h3 class="white--text ml-3 mt-4">Licence pro Metinet</h3>
                   <p class="grey--text ml-3 mt-6">
@@ -65,7 +65,7 @@
                   <h1 class="red--text text--darken-4 mt-4 number">+2 ans</h1>
                   <h3 class="white--text mt-4">d'expérience professionnelle</h3>
                 </div>
-                <div class="child2 mRight">
+                <div class="child2 mRight mb-10 mb-sm-0">
                   <v-row>
                     <v-col cols="12" class="childcol">
                       <div class="child2 mButton padding bgColor1">
@@ -89,10 +89,7 @@
             </v-row>
           </div>
         </v-col>
-                <v-col md="3" offset-md="3" id="about">
-          <h4 class="white--text">FEATURED PROJECTS</h4>
-          <p class="grey--text">Lorem ipsum dolor Lorem ipsum dolor</p>
-        </v-col>
+         <MySkills />
       </v-row>
     </v-container>
     <Footer />
@@ -101,18 +98,21 @@
 
 <script>
 import NavBar from "./components/NavBar.vue";
+import MySkills from "./components/MySkills.vue";
 
 export default {
-  name: "HelloWorld",
+  name: "App",
   data: () => ({
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
   }),
   components: {
     NavBar,
+    MySkills,
   },
 };
 </script>
 <style scoped>
+
 .top {
   margin-top: 180px;
 }
@@ -137,6 +137,14 @@ export default {
   margin-top: 4rem;
   padding: 2rem 2rem;
 }
+
+@media (min-width: 0px) and (max-width: 650px) {
+        .first {
+          height: 97rem;
+        }
+}
+
+
 .second {
   width: 100%;
   height: 400px;
@@ -158,6 +166,7 @@ export default {
   vertical-align: middle;
   text-align: left;
   margin-right: 8px;
+  width: 17.5rem;
 }
 .bgColor1 {
   background-color: #1e1e1e;
