@@ -91,6 +91,7 @@
         </v-col>
          <MySkills />
       </v-row>
+      <MyProjects />
     </v-container>
     <Footer />
   </v-app>
@@ -99,6 +100,8 @@
 <script>
 import NavBar from "./components/NavBar.vue";
 import MySkills from "./components/MySkills.vue";
+import MyProjects from "./components/MyProjects.vue";
+
 
 export default {
   name: "App",
@@ -108,6 +111,7 @@ export default {
   components: {
     NavBar,
     MySkills,
+    MyProjects,
   },
 };
 </script>
