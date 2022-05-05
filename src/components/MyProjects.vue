@@ -1,6 +1,6 @@
 <template>
  <v-row>
-  <v-col cols="6" class="mt-16" >
+  <v-col cols="12" sm="6" class="mt-16" >
     <v-card
       class="mx-auto mb-5 rounded-lg box-shadow"
       max-width="800"
@@ -13,13 +13,13 @@
           </v-list-item-title>
           <div class="text-overline mb-4">Hackathon ·React · ChartJS</div>
           <div class="resume-card-text">Mettre en place un site vitrine pour obtenir de nouveaux testeurs.</div>
-          <div class="resume-card-text">Développer un dashboard pour rejoindre et rejoindre des campagnes ainsi que de récolter et afficher des statistiques.</div>
+          <div class="resume-card-text">Développer un dashboard permettant de rejoindre des campagnes ainsi que de récolter et afficher des statistiques.</div>
         </v-list-item-content>
           <v-carousel :perPage="1" :mouseDrag="true" :centerMode="true">
             <slide v-for="(image, index) in buildSlideMarkup" :key="index">
                     <v-img
           height="260"
-          width="460"
+          width="420"
           v-bind:src="image['src']"
           class="rounded-lg image-card"
         ></v-img>
@@ -29,7 +29,7 @@
       </v-list-item>
     </v-card>
   </v-col>
-  <v-col cols="6" class="mt-16" >
+  <v-col cols="12" sm="6" class="mt-16" >
     <v-card
       class="mx-auto mb-5 rounded-lg box-shadow"
       max-width="800"
@@ -38,11 +38,10 @@
       <v-list-item three-line>
         <v-list-item-content>
           <v-list-item-title class="text-h4 mb-1 font-weight-black">
-            DoubleText
+            Expos3d
           </v-list-item-title>
-          <div class="text-overline mb-4">React · Go · GraphQL</div>
-          <v-list-item-subtitle>Facebook Messenger Analyzer</v-list-item-subtitle>
-          <div class="resume-card-text">See millions of messages at a glance, without data leaving your computer.</div>
+          <div class="text-overline mb-4">Php · Js · Three.js</div>
+          <div class="resume-card-text">Développement d'un site web permettant la génération automatique et semi-automatique d'une exposition virtuelle.</div>
         </v-list-item-content>
 
      
@@ -50,7 +49,7 @@
             <slide v-for="(image, index) in buildSlideMarkup" :key="index">
                     <v-img
           height="260"
-          width="460"
+          width="420"
           v-bind:src="image['src']"
           class="rounded-lg image-card"
         ></v-img>
@@ -85,15 +84,31 @@ export default {
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
     buildSlideMarkup : [
       {
-        src: 'img.jpg',
+        src: 'wired/wired1.PNG',
         alt: 'Slide 1',
       },
       {
-        src: 'img.jpg',
+        src: 'wired/wired2.PNG',
         alt: 'Slide 2',
       },
       {
-        src: 'img.jpg',
+        src: 'wired/wired3.PNG',
+        alt: 'Slide 3',
+      },
+      {
+        src: 'wired/wired4.PNG',
+        alt: 'Slide 3',
+      },
+      {
+        src: 'wired/wired5.PNG',
+        alt: 'Slide 3',
+      },
+      {
+        src: 'wired/wired6.PNG',
+        alt: 'Slide 3',
+      },
+      {
+        src: 'wired/wired7.PNG',
         alt: 'Slide 3',
       },
      ]
@@ -114,7 +129,7 @@ export default {
 }
 
 .VueCarousel {
-  max-width: 480px;
+  max-width: 445px;
   cursor: grab;
 }
 
