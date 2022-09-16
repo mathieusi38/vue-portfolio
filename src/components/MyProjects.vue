@@ -1,9 +1,10 @@
 <template>
  <v-row>
-  <v-col cols="12" sm="6" class="mt-16" >
+  <h2 class="white--text2" id="section-projet">MES PROJETS</h2>
+  <v-col cols="12" sm="12" class="mt-16" >
     <v-card
       class="mx-auto mb-5 rounded-lg box-shadow"
-      max-width="800"
+      max-width="850" padding-bottom="10"
       outlined
     >
       <v-list-item three-line>
@@ -11,7 +12,7 @@
           <v-list-item-title class="text-h4 mb-1 font-weight-black">
             Wired Beauty
           </v-list-item-title>
-          <div class="text-overline mb-4">Hackathon ·React · ChartJS</div>
+          <div class="text-overline mb-4 style-project-skill">Hackathon ·React · ChartJS</div>
           <div class="resume-card-text">Mettre en place un site vitrine pour obtenir de nouveaux testeurs.</div>
           <div class="resume-card-text">Développer un dashboard permettant de rejoindre des campagnes ainsi que de récolter et afficher des statistiques.</div>
         </v-list-item-content>
@@ -29,19 +30,20 @@
       </v-list-item>
     </v-card>
   </v-col>
-  <v-col cols="12" sm="6" class="mt-16" >
+  <v-col cols="12" sm="12" class="mt-16" >
     <v-card
       class="mx-auto mb-5 rounded-lg box-shadow"
-      max-width="800"
+      max-width="850"
       outlined
+      padding-bottom="10"
     >
       <v-list-item three-line>
         <v-list-item-content>
           <v-list-item-title class="text-h4 mb-1 font-weight-black">
             Expos3d
           </v-list-item-title>
-          <div class="text-overline mb-4">Php · Js · Three.js</div>
-          <div class="resume-card-text">Développement d'un site web permettant la génération automatique et semi-automatique d'une exposition virtuelle.</div>
+          <div class="text-overline mb-4 style-project-skill">Php · Js · Three.js</div>
+          <div class="resume-card-text">Développement d'un site web permettant la génération automatique d'une exposition virtuelle.</div>
         </v-list-item-content>
 
      
@@ -72,7 +74,7 @@ import { Carousel, Slide } from 'vue-carousel';
               <slide v-for="(image, index) in buildSlideMarkup" :key="index">
                 <carousel-image loading="lazy" v-bind:src="image['src']"/>
               </slide>
-            </styled-carousel>
+            </styled-carousel> 15px 20px 15px 10px
           </carousel-container>
 
 
@@ -123,6 +125,21 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+.style-project-skill{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: #1D2430;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.white--text2{
+  text-align: center;
+  margin: auto;
+  margin-top: 2em;
+  color: white;
+}
 .VueCarousel-pagination{
   position: absolute;
   bottom: 0;
@@ -133,8 +150,35 @@ export default {
   cursor: grab;
 }
 
+.v-list-item__content{
+  padding: 15px 20px 15px 10px !important;
+}
+
+@media screen and (max-width: 800px) {
+  .v-list-item {
+    display: block !important;
+  }
+    .v-card{
+    text-align: center;
+  }
+
+  .VueCarousel{
+    margin: auto;
+  }
+}
+
+.resume-card-test{
+  font-family: "Poppins", sans-serif;
+}
+
+.theme--light.v-card {
+  background-color: #FFFFFFD9 !important;
+  color: rgba(0, 0, 0, 0.87);
+  padding-bottom: 10px !important;
+}
+
 .box-shadow{
-  box-shadow: 6px 7px 10px #e1e1e152;
+  box-shadow: 6px 7px 10px #97979752;
 }
 
 .image-card{
@@ -143,12 +187,12 @@ export default {
 
 .card-project{
     width: 980px;
-    background: radial-gradient(145% 145.46% at 0% 0%,#FFF 0%,#EEE 100%);
-    box-shadow: 20px 20px 60px rgba(0,0,0,0.05),-20px -20px 60px rgba(255,255,255,0.8);
+    background: #FFFC;
+    background-color: #1D2430 !important;
     border-radius: 20px;
     margin: auto;
     margin-bottom: auto;
-  margin-bottom: 80px;
+  margin-bottom: 80px;;
 }
 
 @media screen and (max-width: 530px) {

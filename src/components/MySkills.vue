@@ -51,14 +51,6 @@
         <span><i class="fab fa-react fa-lg"></i></span>
       </div>
     </div>
-    <div class="wrapper">
-      <div class="icon logo">
-        <div class="tooltip">
-          Vue.js
-        </div>
-        <span><i class="fab fa-vuejs fa-lg"></i></span>
-        </div>
-      </div>
     </div>
     <div class="skill-button-wrapper mt-10 mb-15">
       <div class="skill-button">
@@ -66,9 +58,6 @@
       </div>
       <div class="skill-button">
         UX & UI
-      </div>
-      <div class="skill-button">
-        Communication
       </div>
     </div>
   </div>
@@ -87,11 +76,9 @@ export default {
 </script>
 <style scoped>
 
-.skill-button-wrapper{
-  display: inline-flex;
-}
 
 .skill-button{
+  display: inline-flex;
   margin: auto;
   text-align: center;
   font-size: 12px;
@@ -106,6 +93,7 @@ border-radius: 24px;
 line-height: 40px;
 color: #222;
 background: #fafafa;
+margin-top: 1rem;
 }
 .skill{
   text-align: center;
@@ -174,8 +162,8 @@ span {
   z-index: 1;
   background: #fff;
   color: #fff;
-  padding: 10px 18px;
-  font-size: 20px;
+  padding: 5px 15px;
+  font-size: 17px;
   font-weight: 500;
   border-radius: 25px;
   opacity: 0;
@@ -184,7 +172,7 @@ span {
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .wrapper .icon:hover .tooltip {
-  top: -70px;
+  top: -50px;
   opacity: 1;
   pointer-events: auto;
 }

@@ -18,7 +18,7 @@
             Passionné par le monde du développement web, <br>
              je suis actuellement en master ingénierie du web afin d'approfondir mes connaissances.
           </p>
-          <v-btn tile color="#A7121D" dark> a propos </v-btn>
+          <v-btn tile color="#A7121D" dark href="#project"> Mes expériences </v-btn>
         </v-col>
         <!-- Ecole -->
         <v-col cols="12" class="padd">
@@ -62,7 +62,7 @@
               <!-- Exp -->
               <v-col cols="12" class="mt-5">
                 <div class="child1">
-                  <h1 class="red--text text--darken-4 mt-4 number">+2 ans</h1>
+                  <h1 class="red--text text--darken-4 mt-4 number">+3 ans</h1>
                   <h3 class="white--text mt-4">d'expérience professionnelle</h3>
                 </div>
                 <div class="child2 mRight mb-10 mb-sm-0">
@@ -93,7 +93,7 @@
       </v-row>
       <MyProjects />
     </v-container>
-    <Footer />
+    <MyFooter />
   </v-app>
 </template>
 
@@ -101,6 +101,7 @@
 import NavBar from "./components/NavBar.vue";
 import MySkills from "./components/MySkills.vue";
 import MyProjects from "./components/MyProjects.vue";
+import MyFooter from "./components/MyFooter.vue";
 
 
 export default {
@@ -112,6 +113,7 @@ export default {
     NavBar,
     MySkills,
     MyProjects,
+    MyFooter,
   },
 };
 </script>
