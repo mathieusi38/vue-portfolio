@@ -43,7 +43,7 @@
             Expos3d
           </v-list-item-title>
           <div class="text-overline mb-4 style-project-skill">Php · Js · Three.js</div>
-          <div class="resume-card-text">Développement d'un site web permettant la génération automatique d'une exposition virtuelle.</div>
+          <div class="resume-card-text">Développement d'un site web permettant la génération automatique d'une musée virtuelle.</div>
         </v-list-item-content>
 
      

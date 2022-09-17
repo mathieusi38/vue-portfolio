@@ -11,11 +11,12 @@
     >
       <v-card-text>
         <v-btn
-          v-for="icon in icons"
+          v-for="(icon, index) in icons"
           :key="icon"
           class="mx-5 white--text social-icon"
           icon
           style="padding:25px;"
+          :href=url[index]
         >
           <v-icon size="34px">
             {{ icon }}
@@ -33,7 +34,8 @@
 export default {
   name: "MyFooter",
   data: () => ({
-    icons: ["mdi-twitter", "mdi-linkedin", "mdi-email"],
+    icons: ["mdi-twitter", "mdi-linkedin"],
+    url: ["https://twitter.com/MathieuSiaud", "https://www.linkedin.com/in/mathieu-siaud-a971a9198"],
   }),
   components: {
   },

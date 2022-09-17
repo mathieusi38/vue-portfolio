@@ -5,7 +5,7 @@
     <v-spacer></v-spacer>
     <v-btn text @click="scroll('home')">Home</v-btn>
     <v-btn text @click="scroll('project')">Expériences</v-btn>
-    <v-btn text @click="scroll('skill')">COmpétences</v-btn>
+    <v-btn text @click="scroll('myskill')">COmpétences</v-btn>
     <v-btn text @click="scroll('section-projet')">Projets</v-btn>
     <v-btn text @click="scroll('contact')"> Contact</v-btn>
   </v-app-bar>
