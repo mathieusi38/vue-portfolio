@@ -1,6 +1,6 @@
 <template>
     <v-col cols="12" class="mt-16" >
-    <div class="skill">
+    <div class="skill" id="myskill">
     <h2 class="white--text">MES COMPETENCES</h2>
     <div class="items mt-15">
     <div class="wrapper">
@@ -49,6 +49,14 @@
           React.js
         </div>
         <span><i class="fab fa-react fa-lg"></i></span>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="icon logo">
+        <div class="tooltip">
+          Drupal
+        </div>
+        <span><i class="fab fa-drupal fa-lg"></i></span>
       </div>
     </div>
     </div>
