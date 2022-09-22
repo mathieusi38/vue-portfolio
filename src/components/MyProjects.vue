@@ -40,15 +40,48 @@
       <v-list-item three-line>
         <v-list-item-content>
           <v-list-item-title class="text-h4 mb-1 font-weight-black">
-            Expos3d
+            Kindred
           </v-list-item-title>
-          <div class="text-overline mb-4 style-project-skill">Php · Js · Three.js</div>
-          <div class="resume-card-text">Développement d'un site web permettant la génération automatique d'une musée virtuelle.</div>
+          <div class="text-overline mb-4 style-project-skill">Symfony · React · ChartJS</div>
+          <div class="resume-card-text">Développement d'un site web afin d'organiser la participation de vos enfants à la vie de la famille.</div>
+          <div class="resume-card-text">Mise en place de l'interface avec React et création d'une api avec symfony</div>
         </v-list-item-content>
 
      
           <v-carousel :perPage="1" :mouseDrag="true" :centerMode="true">
-            <slide v-for="(image, index) in buildSlideMarkup" :key="index">
+            <slide v-for="(image, index) in buildSlideMarkupKindred" :key="index">
+                    <v-img
+          height="260"
+          width="420"
+          v-bind:src="image['src']"
+          class="rounded-lg image-card"
+        ></v-img>
+            </slide>
+          </v-carousel>
+
+      </v-list-item>
+    </v-card>
+  </v-col>
+  <v-col cols="12" sm="12" class="mt-16" >
+    <v-card
+      class="mx-auto mb-5 rounded-lg box-shadow"
+      max-width="850"
+      outlined
+      padding-bottom="10"
+    >
+      <v-list-item three-line>
+        <v-list-item-content>
+          <v-list-item-title class="text-h4 mb-1 font-weight-black">
+            Exposed
+          </v-list-item-title>
+          <div class="text-overline mb-4 style-project-skill">Php · Js · Three.js</div>
+          <div class="resume-card-text">Développement d'un site web permettant la génération automatique d'une musée virtuelle.</div>
+          <div class="resume-card-text">Le site permet notamment de générer un musée avec un fichier SVG mais également en dessinant sur une grille 2D</div>
+        </v-list-item-content>
+
+     
+          <v-carousel :perPage="1" :mouseDrag="true" :centerMode="true">
+            <slide v-for="(image, index) in buildSlideMarkupExposed" :key="index">
                     <v-img
           height="260"
           width="420"
@@ -68,18 +101,6 @@
 
 import { Carousel, Slide } from 'vue-carousel';
 
-/*
-            <carousel-container>
-            <styled-carousel>
-              <slide v-for="(image, index) in buildSlideMarkup" :key="index">
-                <carousel-image loading="lazy" v-bind:src="image['src']"/>
-              </slide>
-            </styled-carousel> 15px 20px 15px 10px
-          </carousel-container>
-
-
-*/
-
 export default {
   name: "FeaturedProjects",
   data: () => ({
@@ -98,20 +119,36 @@ export default {
         alt: 'Slide 3',
       },
       {
-        src: 'wired/wired4.PNG',
-        alt: 'Slide 3',
-      },
-      {
-        src: 'wired/wired5.PNG',
-        alt: 'Slide 3',
-      },
-      {
         src: 'wired/wired6.PNG',
         alt: 'Slide 3',
       },
       {
         src: 'wired/wired7.PNG',
         alt: 'Slide 3',
+      },
+     ],
+     buildSlideMarkupExposed : [
+      {
+        src: 'expos3d/expos3d.PNG',
+        alt: 'Slide 1',
+      },
+     ],
+     buildSlideMarkupKindred : [
+      {
+        src: 'kindred/image-1.PNG',
+        alt: 'Slide 1',
+      },
+      {
+        src: 'kindred/image-2.PNG',
+        alt: 'Slide 1',
+      },
+      {
+        src: 'kindred/image-3.PNG',
+        alt: 'Slide 1',
+      },
+      {
+        src: 'kindred/image-4.PNG',
+        alt: 'Slide 1',
       },
      ]
   }),
@@ -125,6 +162,10 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+.v-image__image--cover{
+  background-position: initial !important;
+}
 .style-project-skill{
   font-family: 'Poppins', sans-serif;
   font-weight: 600;

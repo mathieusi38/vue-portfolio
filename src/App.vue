@@ -3,7 +3,7 @@
     id="home"
     :style="{ background: $vuetify.theme.themes.dark.background }"
   >
-    <nav-bar />
+    <nav-bar v-if="isNotMobile" />
     <v-container fluid top>
       <v-row class="spacing-playground">
         <!-- Presentation -->
@@ -103,7 +103,6 @@ import MySkills from "./components/MySkills.vue";
 import MyProjects from "./components/MyProjects.vue";
 import MyFooter from "./components/MyFooter.vue";
 
-
 export default {
   name: "App",
   data: () => ({
@@ -115,6 +114,15 @@ export default {
     MyProjects,
     MyFooter,
   },
+  computed: {
+   isNotMobile() {
+      return this.$vuetify.breakpoint.smAndUp;
+   },
+   isMobile() {
+      return this.$vuetify.breakpoint.xsOnly;
+   }
+}
+
 };
 </script>
 <style scoped>

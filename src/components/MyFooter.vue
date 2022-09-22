@@ -2,7 +2,7 @@
   <v-footer
     dark
     padless
-    class="my-footer"
+    class="my-footer" id="footer"
   >
     <v-card
       flat

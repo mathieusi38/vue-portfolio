@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app color="#111111" dark flat class="px-8">
+  <v-app-bar app color="#111111" dark flat class="px-8" v-if="isNotMobile">
 
 
     <v-spacer></v-spacer>
@@ -7,8 +7,10 @@
     <v-btn text @click="scroll('project')">Expériences</v-btn>
     <v-btn text @click="scroll('myskill')">COmpétences</v-btn>
     <v-btn text @click="scroll('section-projet')">Projets</v-btn>
-    <v-btn text @click="scroll('contact')"> Contact</v-btn>
-  </v-app-bar>
+    <v-btn text @click="scroll('footer')"> Contact</v-btn>
+  </v-app-bar>  
+
+
 </template>
 
 <script>
@@ -19,6 +21,11 @@ export default {
       element.scrollIntoView({ behavior: "smooth" });
     },
   },
+  computed: {
+   isNotMobile() {
+      return this.$vuetify.breakpoint.smAndUp;
+   }
+}
 };
 </script>
 
