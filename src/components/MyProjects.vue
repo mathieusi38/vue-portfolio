@@ -107,23 +107,23 @@ export default {
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
     buildSlideMarkup : [
       {
-        src: 'wired/wired1.png',
+        src: 'wired/wired1.PNG',
         alt: 'Slide 1',
       },
       {
-        src: 'wired/wired2.png',
+        src: 'wired/wired2.PNG',
         alt: 'Slide 2',
       },
       {
-        src: 'wired/wired3.png',
+        src: 'wired/wired3.PNG',
         alt: 'Slide 3',
       },
       {
-        src: 'wired/wired6.png',
+        src: 'wired/wired6.PNG',
         alt: 'Slide 3',
       },
       {
-        src: 'wired/wired7.png',
+        src: 'wired/wired7.PNG',
         alt: 'Slide 3',
       },
      ],
