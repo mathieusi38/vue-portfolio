@@ -107,47 +107,47 @@ export default {
     icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
     buildSlideMarkup : [
       {
-        src: 'wired/wired1.PNG',
+        src: 'wired/wired1.png',
         alt: 'Slide 1',
       },
       {
-        src: 'wired/wired2.PNG',
+        src: 'wired/wired2.png',
         alt: 'Slide 2',
       },
       {
-        src: 'wired/wired3.PNG',
+        src: 'wired/wired3.png',
         alt: 'Slide 3',
       },
       {
-        src: 'wired/wired6.PNG',
+        src: 'wired/wired6.png',
         alt: 'Slide 3',
       },
       {
-        src: 'wired/wired7.PNG',
+        src: 'wired/wired7.png',
         alt: 'Slide 3',
       },
      ],
      buildSlideMarkupExposed : [
       {
-        src: 'expos3d/expos3d.PNG',
+        src: 'expos3d/expos3d.png',
         alt: 'Slide 1',
       },
      ],
      buildSlideMarkupKindred : [
       {
-        src: 'kindred/image-1.PNG',
+        src: 'kindred/image-1.png',
         alt: 'Slide 1',
       },
       {
-        src: 'kindred/image-2.PNG',
+        src: 'kindred/image-2.png',
         alt: 'Slide 1',
       },
       {
-        src: 'kindred/image-3.PNG',
+        src: 'kindred/image-3.png',
         alt: 'Slide 1',
       },
       {
-        src: 'kindred/image-4.PNG',
+        src: 'kindred/image-4.png',
         alt: 'Slide 1',
       },
      ]
